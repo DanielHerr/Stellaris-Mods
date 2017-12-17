@@ -1,0 +1,7 @@
+# Root = Planet, From = Planet Owner
+# FromFrom = Planet Controller (the one occupying)
+
+on_planet_occupied = {
+	events = {
+  planetaryconquest.1
+} }
