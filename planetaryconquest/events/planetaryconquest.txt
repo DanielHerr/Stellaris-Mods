@@ -9,10 +9,16 @@ planet_event = {
 	is_triggered_only = yes
  trigger = {
   from = {
-   is_country_type = default
-  }
+   or = {
+    is_country_type = default
+    is_country_type = fallen_empire
+    is_country_type = awakened_fallen_empire
+  } }
   fromfrom = {
-   is_country_type = default
+   or = {
+    is_country_type = default
+    is_country_type = awakened_fallen_empire
+   }
    has_policy_flag = unrestricted_wars
   }
   or = {
@@ -24,5 +30,25 @@ planet_event = {
  } } }
  immediate = {
   root = {
-   conquer = fromfrom
-} } }
+   if = {
+				limit = {
+					not = {
+      is_original_owner = fromfrom
+    }	}
+				add_threat = {
+					who = fromfrom
+					amount = 3
+				}
+				fromfrom = {
+					set_timed_country_flag = {
+						flag = imperialist_conquest_timed_flag
+						days = 7200
+				} }
+				conquer = fromfrom				
+				else = {
+					add_threat = {
+						who = fromfrom
+						amount = 1
+					}
+					set_owner = fromfrom
+} } } } }

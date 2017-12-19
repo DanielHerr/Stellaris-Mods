@@ -1,11 +1,5 @@
-name="Planetary Conquest"
-archive="planetaryconquest.zip"
-tags={
-	"Military"
-	"Gameplay"
-	"Warfare"
-	""
-	"https://danielherr.software"
-}
-picture="image.jpg"
-supported_version="1.9.*"
+name = "Planetary Conquest"
+path = "mod/planetaryconquest"
+tags = { "Military" "Gameplay" "Warfare" "" "https://danielherr.software" }
+supported_version = "1.9.*"
+picture = "image.jpg"
