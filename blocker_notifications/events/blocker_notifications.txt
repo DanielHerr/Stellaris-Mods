@@ -1,0 +1,26 @@
+namespace = blocker_notifications
+
+# From = Tile, This = Planet
+planet_event = {
+ id = blocker_notifications.1
+ is_triggered_only = yes
+ hide_window = yes
+ location = this
+ trigger = {
+  not = {
+   any_tile {
+    and = {
+     has_blocker = yes
+     has_building_construction = yes     
+ } } } }
+ immediate = {
+  create_message = {
+   type = TILE_BLOCKER_CLEARED
+   localization = TILE_BLOCKER_CLEARED_MESSAGE
+   days = 30
+   target = root
+   variable = {
+    type = name
+    localization = PLANET
+    scope = root
+} } } }

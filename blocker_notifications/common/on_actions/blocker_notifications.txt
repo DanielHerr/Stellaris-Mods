@@ -1,0 +1,7 @@
+# Modded (added)
+
+# From = Tile, This = Planet
+on_blocker_cleared = {
+ events = {
+  blocker_notifications.1
+} }
