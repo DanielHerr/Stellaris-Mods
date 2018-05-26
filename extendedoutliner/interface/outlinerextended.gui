@@ -31,7 +31,7 @@ guiTypes = {
 		buttonType = {
 			name = "options"
 			quadTextureSprite = "GFX_outliner_options_button"
-			position = { x = -150 y = 5  } # Modded from x = -30 y = 17
+			position = { x = -100 y = 5  } # Modded from x = -30 y = 17
 			pdx_tooltip = "OUTLINER_OPTIONS_TOOLTIP"
 			orientation = "UPPER_RIGHT"
 		}
@@ -49,9 +49,18 @@ guiTypes = {
 	containerWindowType = {
 		name = "outliner_toggle_window"
 		size = { width = 32 height = 32 }
-  position = { x = 200 y = 120 }
-  show_position = { x = -65 y = 105 }
-  hide_position = { x = 200 y = 105 }
+  position = {
+   x = 200
+   y = 25 # Modded from 120
+  }
+  show_position = {
+   x = -65
+   y = 25 # Modded from 105
+  }
+  hide_position = {
+   x = 200
+   y = 25 # Modded from 105
+  }
   animation_time = 500
   animation_type = decelerated
 		orientation = upper_right
@@ -59,26 +68,8 @@ guiTypes = {
 		buttonType = {
 			name = "outliner_toggle"
 			quadTextureSprite = "outliner_button"
-			position = { x = 100 y = 0 } # Modded from x = 0
+			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			shortcut = "o"
 			clicksound = interface
-	} }
-	containerWindowType = {
-		name = "outliner_toggle_window"
-		size = { width = 32 height = 32 }
-  position = { x = 200 y = 120 }
-  show_position = { x = -65 y = 105 }
-  hide_position = { x = 200 y = 105 }
-  animation_time = 500
-  animation_type = decelerated
-		orientation = upper_right
-		moveable = no
-		buttonType = {
-			name = "outliner_toggle"
-			quadTextureSprite = "outliner_button"
-			position = { x = -100 y = 0 } # Modded from x = 0
-			Orientation = "UPPER_LEFT"
-			shortcut = "o"
-			clicksound = interface
- } } }
+} } }

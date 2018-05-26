@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = {
+		name = "alliance_button_window"
+		position = {
+   x = 5 # Modded from -60
+   y = -225 # Modded from -80
+  }
+		size = { width = 70 height = 40 }
+		orientation = lower_left # Modded from lower_right
+		moveable = no
+		buttonType = {
+			name = "federation_button"
+			spriteType = "GFX_at_federation_with_bg"
+			position = {
+    x = 0 # Modded from -24
+    y = 0 # Modded from -73
+} } } }

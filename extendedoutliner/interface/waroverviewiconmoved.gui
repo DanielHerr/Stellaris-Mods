@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = { # Box which holds all small icons, one for each war
+		name = "waricon_box"
+		position = {
+   x = 30 # Modded from 0
+   y = -100 # Modded from -80
+  }
+		size = { width = 200 height = 100 }
+		moveable = no
+		orientation = lower_left # Modded from lower_right
+		OverlappingElementsBoxType = {
+			name = "box"
+			position = { x = 0 y = 0 }
+			size = { x = 340 y = 100 }
+			format = left # Modded from right
+			spacing = -5
+} } }

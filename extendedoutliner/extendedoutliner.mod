@@ -1,7 +1,8 @@
 name="Extended Outliner"
-path="mod/extendedoutliner"
+archive="extendedoutliner.zip"
 tags={
- "Interface"
- "Utilities"
+	"Interface"
+	"Utilities"
 }
+remote_file_id="952903637"
 supported_version="1.6.*"
